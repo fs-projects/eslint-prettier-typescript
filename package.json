@@ -1,16 +1,24 @@
 {
-  "name": "eslint-prettier-typescript",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --watch"
-  },
-  "author": "Utkarsh Kukreti",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.2.2"
-  },
-  "type": "module"
+	"name": "eslint-prettier-typescript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc --watch",
+		"format": "prettier --write .",
+		"prepare": "husky install"
+	},
+	"author": "Utkarsh Kukreti",
+	"license": "ISC",
+	"devDependencies": {
+		"husky": "^8.0.3",
+		"lint-staged": "^14.0.1",
+		"prettier": "3.0.3",
+		"typescript": "^5.2.2"
+	},
+	"type": "module",
+	"lint-staged": {
+		"*": "prettier --ignore-unknown --write"
+	}
 }

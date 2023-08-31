@@ -1,11 +1,14 @@
 {
-  "compilerOptions": {
-    "module": "ESNext",
-    "target": "ES2021",
-    "declaration": true, // generate d.ts files
-    "declarationMap": true, // generate a map so that if someone is using vscode, user can reach the original ts file from it.
-    "sourceMap": true, // generate source files while debugging say in chrome
-    "esModuleInterop": true, // interopability between commonjs and esmodules
-    "skipLibCheck": true // skip type checking of lib files
-  }
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "ES2021",
+		"declaration": true, // generate d.ts files
+		"declarationMap": true, // generate a map so that if someone is using vscode, user can reach the original ts file from it.
+		"sourceMap": true, // generate source files while debugging say in chrome
+		"esModuleInterop": true, // interopability between commonjs and esmodules
+		"skipLibCheck": true, // skip type checking of lib files
+		"outDir": "dist",
+		"strictNullChecks": true, // covered with strict true
+		"strict": true
+	}
 }
