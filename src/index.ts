@@ -3,6 +3,10 @@ interface K {
 	email: string;
 }
 
+const a = 6;
+const b = 8;
+var c = 10;
+
 console.log("hello word!");
 
 export const greet = "hello bhai!";
